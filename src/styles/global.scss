@@ -1,0 +1,383 @@
+$primaryColor: rgba(240, 98, 146, 1);
+html {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    // font-family: "Montserrat", sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    // font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
+    height: 100%;
+    // min-height: 920px;
+    color: #536171;
+    transition: background-color 1s ease-in-out;
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 1.75rem;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.42188rem;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 1.75rem;
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    color: hsla(0, 0%, 0%, 0.59);
+    font-style: italic;
+    border-left: 0.32813rem solid rgba(240, 98, 146, 1);
+}
+
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+blockquote *:last-child {
+    margin-bottom: 0;
+}
+
+strong {
+    font-weight: 400;
+    color: #202020;
+}
+
+h1,
+h2 {
+    word-break: break-word;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+
+    &.navPageHeader {
+        padding: 0 0 18px;
+        color: #333;
+        font-size: 1.4em;
+    }
+}
+
+h3,
+.h3 {
+    font-family: "Kanit", sans-serif;
+    word-break: break-word;
+    font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+    font-family: "Kanit", sans-serif;
+    word-break: break-word;
+    font-size: 1.5rem;
+}
+
+h3,
+h4 {
+    // font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+h5,
+.h5 {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+h6,
+.h6 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    line-height: 1.2;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.9em;
+
+    @media (min-width: 768px) {
+        font-size: 2.5em;
+    }
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+a {
+    color: $primaryColor;
+    text-decoration: none;
+    transition: color 0.2s ease, opacity 0.2s ease;
+    &:hover {
+        text-decoration: none;
+        color: lighten($primaryColor, 10%);
+    }
+    &:focus {
+        text-decoration: none;
+        color: lighten($primaryColor, 5%);
+    }
+}
+
+/* thai */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Kanit ExtraLight"), local("Kanit-ExtraLight"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5aOhWzVaF5NQ.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5aOhWnVac.woff)
+            format("woff");
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Kanit ExtraLight"), local("Kanit-ExtraLight"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5aOhWoVaF5NQ.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5aOhWnVac.woff)
+            format("woff");
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Kanit ExtraLight"), local("Kanit-ExtraLight"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5aOhWpVaF5NQ.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5aOhWnVac.woff)
+            format("woff");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Kanit ExtraLight"), local("Kanit-ExtraLight"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5aOhWnVaE.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5aOhWnVac.woff)
+            format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Kanit Light"), local("Kanit-Light"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr4-ORWzVaF5NQ.woff2)
+            format("woff2");
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Kanit Light"), local("Kanit-Light"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr4-ORWoVaF5NQ.woff2)
+            format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Kanit Light"), local("Kanit-Light"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr4-ORWpVaF5NQ.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr4-ORWnVac.woff)
+            format("woff");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Kanit Light"), local("Kanit-Light"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr4-ORWnVaE.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr4-ORWnVac.woff)
+            format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Kanit Regular"), local("Kanit-Regular"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKZ-Go6G5tXcraBGwCYdA.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKZ-Go6G5tXcraVGwY.woff)
+            format("woff");
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Kanit Regular"), local("Kanit-Regular"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKZ-Go6G5tXcraaGwCYdA.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKZ-Go6G5tXcraVGwY.woff)
+            format("woff");
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Kanit Regular"), local("Kanit-Regular"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKZ-Go6G5tXcrabGwCYdA.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKZ-Go6G5tXcraVGwY.woff)
+            format("woff");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Kanit Regular"), local("Kanit-Regular"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKZ-Go6G5tXcraVGwA.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKZ-Go6G5tXcraVGwY.woff)
+            format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Kanit Medium"), local("Kanit-Medium"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5mOBWzVaF5NQ.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5mOBWnVac.woff)
+            format("woff");
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Kanit Medium"), local("Kanit-Medium"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5mOBWoVaF5NQ.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5mOBWnVac.woff)
+            format("woff");
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Kanit Medium"), local("Kanit-Medium"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5mOBWpVaF5NQ.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5mOBWnVac.woff)
+            format("woff");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-display: fallback;
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Kanit Medium"), local("Kanit-Medium"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5mOBWnVaE.woff2)
+            format("woff2"),
+        url(https://fonts.gstatic.com/s/kanit/v3/nKKU-Go6G5tXcr5mOBWnVac.woff)
+            format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}

@@ -1,0 +1,39 @@
+$primaryColor: rgba(240, 98, 146, 1);
+.pageHeaderEffect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 251px;
+
+    > div {
+        background: $primaryColor;
+        border-radius: 0 0 90% 30%;
+        position: absolute;
+        top: 0;
+        left: -25px;
+        right: -100px;
+        height: 250px;
+    }
+
+    @media (min-width: 576px) {
+        height: 261px;
+
+        > div {
+            height: 260px;
+            left: -50px;
+            right: -200px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        height: 271px;
+
+        > div {
+            height: 268px;
+            left: -100px;
+            right: -300px;
+        }
+    }
+}

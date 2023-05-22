@@ -1,0 +1,109 @@
+.specialHeader {
+    h1 {
+        font-size: 1.8em;
+        color: #fff;
+        font-weight: 400;
+
+        @media (min-width: 768px) {
+            font-size: 3em;
+            font-weight: 500;
+        }
+    }
+
+    margin-bottom: 8em;
+    p {
+        font-weight: 300;
+        font-size: 22px;
+        color: #202020;
+    }
+}
+
+.articles {
+    .cover {
+        box-shadow: 0 0 50px -3px rgba(0, 0, 0, 0.35);
+        margin-top: 2em;
+        border-radius: 25px;
+
+        transition: box-shadow .4s ease;
+
+        &:hover {
+            box-shadow: 0 0 50px -3px rgba(0, 0, 0, 0.50);
+        }
+    }
+    .subcover {
+        max-height: 300px;
+        min-height: 300px;
+
+        box-shadow: 0 0 50px -3px rgba(0, 0, 0, 0.35);
+        border-radius: 25px;
+        transition: box-shadow .4s ease;
+
+        &:hover {
+            box-shadow: 0 0 50px -3px rgba(0, 0, 0, 0.50);
+        }
+    }
+    .section {
+        min-height: 180px;
+    }
+    .posted {
+        margin-top: .4em;
+        font-size: 1.2em;
+    }
+    .subposted {
+        margin-top: .4em;
+        font-size: .8em;
+    }
+    article {
+        
+        display: block;
+        margin-bottom: 2em;
+        min-height: 450px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+
+        &.secondaryArticle {
+            margin-top: 4em;
+            h3 {
+                font-size: 1.8em;
+
+                @media (min-width: 768px) {
+                    font-size: 2em;
+                }
+            }
+            p {
+                font-size: 1.2em;
+            }
+        }
+        @media (min-width: 576px) {
+            &.secondaryArticle {
+                vertical-align: top;
+                display: inline-block;
+                width: 50%;
+                &:nth-child(even) {
+                    padding-right: 3em;
+                }
+                &:nth-child(odd) {
+                    padding-left: 3em;
+                }
+            }
+            &.mainArticle {
+                display: block;
+            }
+        }
+
+        @media (min-width: 768px) {
+            // font-size: 1.1em;
+        }
+
+        @media (min-width: 992px) {
+            // font-size: 1.2em;
+        }
+    }
+}

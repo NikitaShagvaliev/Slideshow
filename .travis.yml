@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '17'
+before_script:
+- pip install --user awscli
+- npm install -g gatsby-cli
+node_js:
+- '17'
+deploy:
+  provider: script
+  script: sh deploy.sh slidesome-live EH7GRDXS5AH23
+  skip_cleanup: true
+  on:
+    branch: master
+# deploy: <-- BETA
+#   provider: script
+#   script: sh deploy.sh slidesome-beta E1CQWHJ6UTR39N
+#   skip_cleanup: true
+#   on:
+#     branch: master
